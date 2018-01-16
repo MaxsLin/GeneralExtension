@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GeneralExtension"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "GeneralExtension in swift."
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "GeneralExtension", "GeneralExtension/**/*.{h,swift}"
-  s.exclude_files = "GeneralExtension/Exclude"
+  # s.exclude_files = "GeneralExtension/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 

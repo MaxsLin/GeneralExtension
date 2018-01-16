@@ -16,6 +16,7 @@
 		421055791FFE40FD00076F78 /* TimepieceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421055781FFE40FD00076F78 /* TimepieceOperation.swift */; };
 		4210557B1FFE42A900076F78 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210557A1FFE42A900076F78 /* UIDevice+Extensions.swift */; };
 		4210557D1FFE492C00076F78 /* UIViewTagHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210557C1FFE492C00076F78 /* UIViewTagHistory.swift */; };
+		42D80E08200DEF2300E34621 /* CustomPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E07200DEF2300E34621 /* CustomPrint.swift */; };
 		42FA706C1FFE21DF002C26EC /* GeneralExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FA706A1FFE21DF002C26EC /* GeneralExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FA70731FFE2201002C26EC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA70721FFE2201002C26EC /* UIView+Extensions.swift */; };
 		42FA70751FFE22ED002C26EC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA70741FFE22ED002C26EC /* UIColor+Extensions.swift */; };
@@ -43,6 +44,7 @@
 		421055781FFE40FD00076F78 /* TimepieceOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimepieceOperation.swift; sourceTree = "<group>"; };
 		4210557A1FFE42A900076F78 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		4210557C1FFE492C00076F78 /* UIViewTagHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTagHistory.swift; sourceTree = "<group>"; };
+		42D80E07200DEF2300E34621 /* CustomPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrint.swift; sourceTree = "<group>"; };
 		42FA70671FFE21DF002C26EC /* GeneralExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeneralExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FA706A1FFE21DF002C26EC /* GeneralExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralExtension.h; sourceTree = "<group>"; };
 		42FA706B1FFE21DF002C26EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				42FA706B1FFE21DF002C26EC /* Info.plist */,
 				42FA70741FFE22ED002C26EC /* UIColor+Extensions.swift */,
 				42FA70761FFE248F002C26EC /* UIAlert+Extensions.swift */,
+				42D80E07200DEF2300E34621 /* CustomPrint.swift */,
 			);
 			path = GeneralExtension;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				4210557D1FFE492C00076F78 /* UIViewTagHistory.swift in Sources */,
 				42FA70731FFE2201002C26EC /* UIView+Extensions.swift in Sources */,
+				42D80E08200DEF2300E34621 /* CustomPrint.swift in Sources */,
 				421055791FFE40FD00076F78 /* TimepieceOperation.swift in Sources */,
 				42FA70771FFE248F002C26EC /* UIAlert+Extensions.swift in Sources */,
 				4210557B1FFE42A900076F78 /* UIDevice+Extensions.swift in Sources */,
@@ -447,6 +451,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soben168.GeneralExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -471,9 +476,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soben168.GeneralExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
